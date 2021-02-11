@@ -27,8 +27,8 @@ public class PruebaArrayListLibros {
     a.ordenarTitulos();
     System.out.println("Los libros ordenados por titulo son: " + a);
     
-    a.ordenarPorPaginas();
-    System.out.println("Los libros ordenados por nº de páginas son: " + a);
+    //a.ordenarPorPaginas();
+    //System.out.println("Los libros ordenados por nº de páginas son: " + a);
   
     
     //a.eliminar(2);

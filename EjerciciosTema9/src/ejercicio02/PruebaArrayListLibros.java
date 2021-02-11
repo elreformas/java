@@ -24,15 +24,11 @@ public class PruebaArrayListLibros {
     a.insertar(l2);
     a.insertar(l3);	
     
-    a.ordenarTitulos();
-    System.out.println("Los libros ordenados por titulo son: " + a);
+    a.ordenarTituloStream();
+    System.out.println("Los libros ordenados por título son: " + a);
     
-    a.ordenarPorPaginas();
-    System.out.println("Los libros ordenados por nº de páginas son: " + a);
+    //a.ordenarPaginaStream();
+    //System.out.println("Los libros ordenados por páginas son: " + a);
   
-    
-    //a.eliminar(2);
-    //System.out.println("Tras eliminar el 2 \n");
-    //System.out.println(a);
   }
 }

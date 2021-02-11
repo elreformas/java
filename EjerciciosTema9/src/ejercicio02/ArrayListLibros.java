@@ -3,6 +3,7 @@ package ejercicio02;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.stream.Collectors;
 
 // Repaso ArrayList
 
@@ -38,16 +39,15 @@ public class ArrayListLibros {
   }
   
   
- public void ordenarTitulos () {
+ public void ordenarTituloStream () {
 	 
-	 Collections.sort(lista, new TituloComparator());
+	 lista = lista.stream().sorted((x,y) -> x.dameTitulo().compareToIgnoreCase(y.dameTitulo())).collect(Collectors.toCollection(ArrayList::new));
  }
  
- public void ordenarPorPaginas () {
+ public void ordenarPaginaStream () {
 	 
-	 Collections.sort(lista, new PaginasComparator());
+	 lista = lista.stream().sorted((x,y) -> x.damePaginas() - y.damePaginas()).collect(Collectors.toCollection(ArrayList::new));
  }
- 
  
  
   public boolean insertar(Libro p) {
