@@ -3,13 +3,8 @@ package ejercicio03;
 import java.util.HashSet;
 import java.util.Iterator;
 
-
-// Repaso ArrayList
-
-//añadido el collections.sort
-
 public class ArrayListLibros {
-  // private final static int MAX = 100; no tiene sentido....
+  
   private HashSet<Libro> lista = new HashSet<Libro>();
   
   public ArrayListLibros() {

@@ -19,7 +19,7 @@ public class PruebaArrayListLibros {
     
                      
     
-    ArrayListLibros a= new ArrayListLibros();
+    ArrayListLibros a = new ArrayListLibros();
     a.insertar(l1);
     a.insertar(l2);
     a.insertar(l3);	

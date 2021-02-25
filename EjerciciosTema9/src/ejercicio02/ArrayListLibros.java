@@ -34,14 +34,14 @@ public class ArrayListLibros {
     	else i++;
     }	
     if (encontrado) return i;
-    else return -1;
-    
+    else return -1;   
   }
   
   
  public void ordenarTituloStream () {
 	 
 	 lista = lista.stream().sorted((x,y) -> x.dameTitulo().compareToIgnoreCase(y.dameTitulo())).collect(Collectors.toCollection(ArrayList::new));
+	 
  }
  
  public void ordenarPaginaStream () {

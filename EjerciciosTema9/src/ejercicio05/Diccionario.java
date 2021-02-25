@@ -14,32 +14,32 @@ import java.util.Scanner;
 			HashMap<String, String> diccionario = new HashMap<String, String>();
 
 
-			diccionario.put("Hola","Hello");
-			diccionario.put("Caballito de mar","Seahorse");
-			diccionario.put("Arco","Bow");
-			diccionario.put("Lluvia","Rain");
-			diccionario.put("Terremoto","Earthquake");
-			diccionario.put("Fuego","Fire");
-			diccionario.put("Bardo","Bard");
-			diccionario.put("Monje","Monk");
-			diccionario.put("Guadaña","Scythe");
-			diccionario.put("Calor","Heat");
-			diccionario.put("Almizcle","Musk");
-			diccionario.put("Ceniza","Ash");
-			diccionario.put("Amanecer","Dawn");
-			diccionario.put("Zafiro","Shapphire");
-			diccionario.put("Rubí","Ruby");
-			diccionario.put("Esmeralda","Emerald");
-			diccionario.put("Tiempo","Time");
+			diccionario.put("Comer","Eat");
+			diccionario.put("Piedra","Stone");
+			diccionario.put("Noche","Night");
+			diccionario.put("Lasaña","Lasagna");
+			diccionario.put("Estrella","Star");
 			diccionario.put("Espacio","Space");
-			diccionario.put("Diamante","Diamond");
-			diccionario.put("Perla","Pearl");
+			diccionario.put("Galaxia","Galaxy");
+			diccionario.put("Universo","Universe");
+			diccionario.put("Planeta","Planet");
+			diccionario.put("Invierno","Winter");
+			diccionario.put("Verano","Summer");
+			diccionario.put("Cabra","Goat");
+			diccionario.put("Canguro","Kangaroo");
+			diccionario.put("Arbol","Tree");
+			diccionario.put("Dragón","Dragon");
+			diccionario.put("Lobo","Wolf");
+			diccionario.put("Sueño","Dream");
+			diccionario.put("Craneo","Skull");
+			diccionario.put("Morder","Bite");
+			diccionario.put("Kilómetro","Kilometer");
 
 
-			Scanner s = new Scanner(System.in);
+			Scanner teclado = new Scanner(System.in);
 
-			int correctas=0;
-			int incorrectas=0;
+			int aciertos=0;
+			int fallos=0;
 
 			String palabraBuscada;
 
@@ -57,22 +57,22 @@ import java.util.Scanner;
 
 
 				System.out.println("¿Cuál es la traducción de " + palabraBuscada + "?");
-				String respuesta = s.next();
+				String respuesta = teclado.next();
 
 				if(respuesta.equals(diccionario.get(palabraBuscada))) {
 
-					correctas++;
+					aciertos++;
 
 				} else {
 
-					incorrectas++;
+					fallos++;
 
 				}
 			}
 
-			System.out.println("El númerpo de respuestas correctas es: " + correctas);
+			System.out.println("El númerpo de respuestas correctas es: " + aciertos);
 
-			System.out.println("El númerpo de respuestas incorrectas es: " + incorrectas);
+			System.out.println("El númerpo de respuestas incorrectas es: " + fallos);
 
 
 		}
