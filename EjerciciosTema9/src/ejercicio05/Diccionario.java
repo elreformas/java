@@ -73,7 +73,5 @@ import java.util.Scanner;
 			System.out.println("El númerpo de respuestas correctas es: " + aciertos);
 
 			System.out.println("El númerpo de respuestas incorrectas es: " + fallos);
-
-
 		}
 }

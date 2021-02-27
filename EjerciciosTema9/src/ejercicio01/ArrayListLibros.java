@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 
-// Repaso ArrayList
-
-//añadido el collections.sort
-
 public class ArrayListLibros {
   // private final static int MAX = 100; no tiene sentido....
   private ArrayList<Libro> lista;
@@ -15,8 +11,6 @@ public class ArrayListLibros {
   public ArrayListLibros() {
     lista = new ArrayList<Libro>();
   }
-
- // public boolean llena() { return ... no tiene sentido }
 
   public boolean vacia() { return lista.isEmpty(); }
 
@@ -34,9 +28,7 @@ public class ArrayListLibros {
     }	
     if (encontrado) return i;
     else return -1;
-    
   }
-  
   
  public void ordenarTitulos () {
 	 
@@ -47,8 +39,6 @@ public class ArrayListLibros {
 	 
 	 Collections.sort(lista, new PaginasComparator());
  }
- 
- 
  
   public boolean insertar(Libro p) {
   

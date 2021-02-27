@@ -12,18 +12,18 @@ public class errores01 {
 		
 		try {
 		
-		System.out.println("Introduce un numero entero: ");
-		numero = teclado.nextInt();
+			System.out.println("Introduce un numero entero: ");
+			numero = teclado.nextInt();
 		
-		System.out.println("El numero es: " + numero);
+			System.out.println("El numero es: " + numero);
 		
 		}
+		
 		catch (InputMismatchException Exception) {
 			
 			System.out.println("No has introducido el tipo de dato correcto");
 		}
-		
-
+	
 	}
 
 }
